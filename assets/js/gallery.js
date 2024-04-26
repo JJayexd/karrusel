@@ -8,11 +8,12 @@ let myForwardButton = document.getElementById('forward')
 
 myForwardButton.addEventListener('click', (event) => {
 
-    if (currentImage > 4) {
-        currentImage = imageArray.length
+    currentImage = currentImage + 1
+
+    if (currentImage == imageArray.length) {
+        currentImage = 0
     }
 
-    currentImage = currentImage + 1
     changeImage()
 
 })
@@ -26,6 +27,7 @@ myBackButton.addEventListener('click', (event) => {
     }
 
     currentImage = currentImage - 1
+    
     changeImage()
         
 })

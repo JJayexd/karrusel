@@ -7,5 +7,33 @@ font-family: "Oswald", sans-serif; */
 }
 
 #galleryImage {
-  max-width: 500px;
+  max-height: 500px;
+  width: 500px;
+}
+
+#app{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) 
+}
+
+#forward{
+  position: absolute;
+  right: -5%;
+  top: 50%;
+}
+#forward:hover{
+  transform: scale(110%);
+  cursor: pointer;
+}
+
+#back{
+  position: absolute;
+  left: -5%;
+  top: 50%;
+}
+#back:hover{
+  transform: scale(110%);
+  cursor: pointer;
 }
